@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reto.css">
+    <title>Encriptador/Desencriptador</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Encriptador</h2>
+        
+        <textarea id="text" rows="4" placeholder="Ingrese el texto"></textarea>
+        
+        <button class="btn-encriptar" onclick="encryptText()">Encriptar</button>
+        <button class="btn-desencriptar" onclick="decryptText()">Desencriptar</button>
+        
+        
+        <label for="result">Resultado:</label>
+        <textarea id="result" rows="4" readonly placeholder="Resultado"></textarea>
+
+    </div>
+
+    <div class="clipboard-section">
+        <textarea id="clipboard" readonly></textarea>
+        <button class="btn-copiar" onclick="copyToClipboard()">Copiar</button>
+    </div>
+
+    <script src="Reto.js"></script>
+</body>
+</html>
